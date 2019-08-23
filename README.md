@@ -76,23 +76,23 @@ CoreServer.getInstance().closeServer();
 
 #### 通讯
 
-以下示例中包含的规则用**粗体**标明，请求url中需要包含该字段。
+以下示例中包含的规则，请求url中需要包含关键字段。
 
 1. Q：如何请求缩略图？
 
-   A：图片缩略图url示例：http://192.168.43.119:8010/**thumb_img**?dir=filepath;
+   A：图片缩略图url示例：`http://192.168.43.119:8010/thumb_img?dir=filepath`;
 
-   ​	视频缩略图url示例：http://192.168.43.119:8010/**thumb_video**?dir=filepath;
+   ​	视频缩略图url示例：`http://192.168.43.119:8010/thumb_video?dir=filepath`;
 
-   ​	应用图标url示例：http://192.168.43.119:8010/**icon**?dir=apkpath;
+   ​	应用图标url示例：`http://192.168.43.119:8010/icon?dir=apkpath`;
 
 2. Q：如何请求下载？
 
-   A：下载示例：http://192.168.43.119:8010/**file**?dir=filepath;
+   A：下载示例：`http://192.168.43.119:8010/file?dir=filepath`;
 
 3. Q：如何上传？
 
-   A：上传示例：http://192.168.43.119:8010/**upload**?fn=filename;
+   A：上传示例：`http://192.168.43.119:8010/upload?fn=filename`;
 
 除了以上已经内置的关键url，你也可以在UriComponent中添加自定义url。
 
@@ -150,3 +150,5 @@ onServerRead(String url, CustomResponse response);
 ### 简单的示例
 
 在项目的app模块中提供了简单的请求与响应的示例。
+
+
